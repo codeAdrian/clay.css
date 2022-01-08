@@ -1,2 +1,2 @@
-.clay{background-color:var(--clay-background,rgba(0,0,0,.005));border-radius:var(--clay-border-radius,32px);box-shadow:var(--clay-shadow-outset,16px 0 48px 0 rgba(0,0,0,.5)),inset var(--clay-shadow-inset-primary,-8px -8px 16px 0 rgba(0,0,0,.6)),inset var(--clay-shadow-inset-secondary,0 12px 24px 0 #fff)}
+.clay{background-color:var(--clay-background,rgba(0,0,0,.005));border-radius:var(--clay-border-radius,32px);box-shadow:var(--clay-shadow-outset,8px 8px 16px 0 rgba(0,0,0,.25)),inset var(--clay-shadow-inset-primary,-8px -8px 16px 0 rgba(0,0,0,.25)),inset var(--clay-shadow-inset-secondary,8px 8px 16px 0 hsla(0,0%,100%,.2));padding:var(--clay-padding,32px)}
 /*# sourceMappingURL=clay.css.map */
