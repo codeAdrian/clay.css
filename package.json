@@ -1,5 +1,5 @@
 {
-  "name": "clay.css",
+  "name": "claymorphism-css",
   "version": "1.0.0",
   "description": "Extensible and configurable micro CSS class and SASS mixin for adding claymorphism styles to your components.",
   "scripts": {
