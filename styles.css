@@ -1,0 +1,251 @@
+:root {
+  --font-family-primary: "Fredoka One", sans-serif;
+  --font-family-secondary: "Source Sans Pro", sans-serif;
+  --font-family-monospace: "Source Code Pro", monospace;
+
+  --color-text: #121212;
+
+  --color-yellow: #fbe8a6;
+  --color-yellow-alt: #e6c513;
+  --color-yellow-tint: #cfb011;
+  --color-red: #f76d6d;
+  --color-red-tint: #f53d3d;
+  --color-orange: #f4976c;
+  --color-cyan: #a8d1e7;
+  --color-white: #f5f5f5;
+  --color-blue: #24315e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+code {
+  font-family: var(--font-family-monospace);
+}
+
+pre {
+  color: var(--color-text);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+}
+
+body {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -osx-font-smoothing: grayscale;
+  min-width: 1330px;
+}
+
+.container {
+  padding: 7rem 1.5rem 13rem;
+  position: relative;
+}
+
+.container--yellow {
+  background-color: var(--color-yellow);
+}
+
+.container--cyan {
+  background-color: var(--color-cyan);
+}
+
+.container--orange {
+  background-color: var(--color-orange);
+}
+
+.container__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.divider--cyan .shape-fill {
+  fill: var(--color-cyan);
+}
+
+.divider--orange .shape-fill {
+  fill: var(--color-orange);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero article {
+  flex: 1 1 580px;
+  max-width: 650px;
+}
+
+.hero figure {
+  margin-bottom: -25rem;
+  z-index: 2;
+  flex-shrink: 0;
+  animation: wiggle 3s ease-in-out infinite alternate;
+  transform-origin: 50% 50%;
+}
+
+.hero .title {
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.025em;
+}
+
+.hero .bg {
+  --clay-background: var(--color-red);
+  padding: 4rem 3rem;
+}
+
+.hero .card {
+  --clay-background: var(--color-white);
+  --clay-shadow-inset-secondary: 8px 8px 8px 0 rgba(255, 255, 255, 0.9);
+  color: var(--color-text);
+  font-size: 28px;
+  padding: 3rem;
+  margin-right: -12rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(0) translate3d(-1rem, -1rem, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: all 0.15s ease;
+  padding: 1.5rem 2rem;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+
+  --clay-border-radius: 1rem;
+  --clay-shadow-outset: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+  --clay-shadow-inset-primary: -8px -8px 12px 0 rgba(0, 0, 0, 0.2);
+  --clay-shadow-inset-secondary: 8px 8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.button + .button {
+  margin-left: 1rem;
+}
+
+.button:visited {
+  color: var(--color-white);
+}
+
+.button--red {
+  --clay-background: var(--color-red);
+}
+
+.button--red:hover {
+  --clay-background: var(--color-red-tint);
+}
+
+.button--yellow {
+  --clay-background: var(--color-yellow-alt);
+}
+
+.button--yellow:hover {
+  --clay-background: var(--color-yellow-tint);
+}
+
+.button:active {
+  transform: scale3d(0.95, 0.95, 1);
+}
+
+.title {
+  color: var(--color-white);
+  font-size: 88px;
+  text-shadow: 0 0.075em rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+  line-height: 1;
+}
+
+.title--section {
+  margin-bottom: 6rem;
+}
+
+.install {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-right: 7rem;
+}
+
+.install article {
+  padding: 3rem 4rem;
+}
+
+.install pre {
+  --clay-background: var(--color-white);
+  --clay-shadow-inset-secondary: 8px 8px 8px 0 rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  user-select: all;
+  margin-right: -6rem;
+}
+
+.npm {
+  --clay-background: var(--color-red);
+}
+
+.cdn {
+  --clay-background: var(--color-blue);
+}

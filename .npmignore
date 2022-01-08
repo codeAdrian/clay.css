@@ -1,8 +1,0 @@
-src
-node_modules
-.parcel-cache
-.vscode
-.gitignore
-.parcelrc
-.prettierrc
-index.html
