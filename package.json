@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel watch src/clay.scss --dist-dir dist",
     "build": "parcel build src/clay.scss --dist-dir dist",
-    "test": "serve -s ."
+    "preview": "serve -s ."
   },
   "browserslist": "last 2 versions, not dead",
   "keywords": [
