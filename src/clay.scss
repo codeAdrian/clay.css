@@ -1,0 +1,30 @@
+/* --- DEFAULT VALUES --- */
+$default-background: rgba(0, 0, 0, 0.005);
+$default-border-radius: 32px;
+$default-shadow-outset: 16px 0 48px 0 rgba(0, 0, 0, 0.5);
+$default-shadow-inset-primary: -8px -8px 16px 0 rgba(0, 0, 0, 0.6);
+$default-shadow-inset-secondary: 0px 12px 24px 0 rgb(255, 255, 255);
+
+/* --- MIXIN --- */
+@mixin clay(
+  $background: $default-background,
+  $border-radius: $default-border-radius,
+  $shadow-outset: $default-shadow-outset,
+  $shadow-inset-primary: $default-shadow-inset-primary,
+  $shadow-inset-secondary: $default-shadow-inset-secondary
+) {
+  background-color: $background;
+  border-radius: var(--clay-border-radius, 32px);
+  box-shadow: $shadow-outset, inset $shadow-inset-primary, inset $shadow-inset-secondary;
+}
+
+/* --- UTIL CLASS --- */
+.clay {
+  @include clay(
+    $background: var(--clay-background, $default-background),
+    $border-radius: var(--clay-border-radius, $default-border-radius),
+    $shadow-outset: var(--clay-shadow-outset, $default-shadow-outset),
+    $shadow-inset-primary: var(--clay-shadow-inset-primary, $default-shadow-inset-primary),
+    $shadow-inset-secondary: var(--clay-shadow-inset-secondary, $default-shadow-inset-secondary)
+  );
+}

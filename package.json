@@ -1,0 +1,33 @@
+{
+  "name": "clay.css",
+  "version": "1.0.0",
+  "description": "Extensible and configurable micro CSS class and SASS mixin for adding claymorphism styles to your components.",
+  "scripts": {
+    "dev": "parcel watch src/clay.scss --dist-dir dist",
+    "build": "parcel build src/clay.scss --dist-dir dist",
+    "test": "serve -s ."
+  },
+  "browserslist": "last 2 versions, not dead",
+  "keywords": [
+    "claymorphism",
+    "clay",
+    "sass",
+    "mixin",
+    "style",
+    "css",
+    "framework",
+    "customize",
+    "configurable"
+  ],
+  "staticFiles": {
+    "staticPath": "src"
+  },
+  "funding": "https://www.buymeacoffee.com/ubnZ8GgDJ",
+  "author": "Adrian Bece <adrianbece@live.com> (https://codeadrian.github.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.1.1",
+    "parcel": "^2.1.1",
+    "parcel-reporter-static-files-copy": "^1.3.4"
+  }
+}
