@@ -9,15 +9,14 @@
   },
   "browserslist": "last 2 versions, not dead",
   "keywords": [
+    "clay.css",
     "claymorphism",
+    "claymorphic",
     "clay",
     "sass",
     "mixin",
     "style",
-    "css",
-    "framework",
-    "customize",
-    "configurable"
+    "css"
   ],
   "staticFiles": {
     "staticPath": "src"

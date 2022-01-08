@@ -4,7 +4,6 @@ $default-border-radius: 32px;
 $default-shadow-outset: 8px 8px 16px 0 rgba(0, 0, 0, 0.25);
 $default-shadow-inset-primary: -8px -8px 16px 0 rgba(0, 0, 0, 0.25);
 $default-shadow-inset-secondary: 8px 8px 16px 0 rgba(255, 255, 255, 0.2);
-$default-padding: $default-border-radius;
 
 /* --- MIXIN --- */
 @mixin clay(
@@ -12,11 +11,9 @@ $default-padding: $default-border-radius;
   $border-radius: $default-border-radius,
   $shadow-outset: $default-shadow-outset,
   $shadow-inset-primary: $default-shadow-inset-primary,
-  $shadow-inset-secondary: $default-shadow-inset-secondary,
-  $padding: $default-padding
+  $shadow-inset-secondary: $default-shadow-inset-secondary
 ) {
   background-color: $background;
-  padding: $padding;
   border-radius: var(--clay-border-radius, 32px);
   box-shadow: $shadow-outset, inset $shadow-inset-primary, inset $shadow-inset-secondary;
 }
@@ -25,7 +22,6 @@ $default-padding: $default-border-radius;
 .clay {
   @include clay(
     $background: var(--clay-background, $default-background),
-    $padding: var(--clay-padding, $default-padding),
     $border-radius: var(--clay-border-radius, $default-border-radius),
     $shadow-outset: var(--clay-shadow-outset, $default-shadow-outset),
     $shadow-inset-primary: var(--clay-shadow-inset-primary, $default-shadow-inset-primary),
