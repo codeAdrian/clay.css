@@ -38,6 +38,7 @@ pre {
   color: var(--color-text);
   overflow-x: auto;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 img {
@@ -52,7 +53,7 @@ figure {
 }
 
 body {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
   font-family: var(--font-family-primary);
   color: var(--color-white);
@@ -234,12 +235,13 @@ body {
   padding: 3rem 4rem;
 }
 
-.install pre {
+.install pre,
+.apply pre {
   --clay-background: var(--color-white);
   --clay-shadow-inset-secondary: 8px 8px 8px 0 rgba(255, 255, 255, 0.9);
-  padding: 2rem;
+  padding: 2rem 3rem;
   user-select: all;
-  margin-right: -6rem;
+  margin-right: -8rem;
 }
 
 .npm {
@@ -248,4 +250,20 @@ body {
 
 .cdn {
   --clay-background: var(--color-blue);
+}
+
+.apply .card {
+  --clay-background: var(--color-red);
+  padding: 3rem 4rem;
+}
+
+.apply {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  margin-top: 5rem;
+}
+
+.apply .example {
+  max-width: 568px;
 }

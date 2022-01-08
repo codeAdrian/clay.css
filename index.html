@@ -136,12 +136,27 @@
           <h1 class="title title--section">2. Apply it</h1>
           <p>
             Class <code>clay</code> provides bare minimum styles to apply the
-            claymorphic effect to any HTML element.
+            claymorphic effect to any HTML element. Additional styles (layout,
+            position, colors, borders, etc.) should be added by using an
+            additional CSS class.
           </p>
           <div class="apply">
-            <article class="clay">
+            <article class="clay card">
               <h2 class="title">HTML</h2>
-              <pre class="clay">Test</pre>
+              <pre class="clay">
+                <code>
+                  &lt;div class="clay"&gt;<br/>
+                    &nbsp;&nbsp;Fluffy ipsum dolor sit amet consectetur...<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </article>
+
+            <article class="clay example">
+              Fluffy ipsum dolor sit amet consectetur, adipisicing elit.
+              Incidunt aliquid distinctio aliquam ratione animi soluta, quisquam
+              in iste illum suscipit recusandae saepe fugiat, vel doloremque
+              consectetur deleniti tenetur eveniet fugit?
             </article>
           </div>
         </div>
@@ -155,5 +170,19 @@
       >
       from <a href="https://icons8.com/illustrations">Ouch!</a>
     </footer>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6YFV7L0VHS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6YFV7L0VHS");
+    </script>
   </body>
 </html>
