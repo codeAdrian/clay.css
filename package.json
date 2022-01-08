@@ -22,6 +22,10 @@
   "staticFiles": {
     "staticPath": "src"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeAdrian/clay.css"
+  },
   "funding": "https://www.buymeacoffee.com/ubnZ8GgDJ",
   "author": "Adrian Bece <adrianbece@live.com> (https://codeadrian.github.io)",
   "license": "MIT",
