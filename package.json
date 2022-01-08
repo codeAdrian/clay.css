@@ -1,6 +1,6 @@
 {
   "name": "claymorphism-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extensible and configurable micro CSS class and SASS mixin for adding claymorphism styles to your components.",
   "scripts": {
     "dev": "parcel watch src/clay.scss --dist-dir dist",
