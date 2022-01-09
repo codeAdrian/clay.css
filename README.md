@@ -123,11 +123,11 @@ You'll have to apply the following styles manually. Check out the default values
 
 ### Why not build the entire framework / design system?
 
-This is a relatively new and unexplored concept, so I didn't want to build an entire design system or a CSS framework with styled buttons. inputs, nav, cards and other elements, etc. and create a framework with accessibility issues that is also massive and difficult to maintain and use.
+This is a relatively new and unexplored concept, so I didn't want to build an entire design system or a CSS framework that enforces styles on buttons. inputs, nav, cards and other elements, etc. and end up with accessibility issues and a framework that is hard to maintain.
 
-I wanted to leave it unopinionated and simple, so its easily customizable and can be sprinkled throughout your project.
+I wanted to leave it unopinionated and simple, so its easily customizable and can be sprinkled throughout your project. This approach allows you full control over the styles and how you adapt them to your design.
 
-I used it while building the [Demo page](https://codeadrian.github.io/clay.css/) and it was really fun, useful and intuitive. CSS variables are easy to memorize and easily customizable.
+I've built a [demo page](https://codeadrian.github.io/clay.css/) and it was really fun, useful and intuitive. CSS variables are easy to memorize and easily customizable.
 
 ## Sponsors
 
