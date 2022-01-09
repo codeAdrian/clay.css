@@ -6,3 +6,4 @@ node_modules
 .parcelrc
 .prettierrc
 index.html
+docs
