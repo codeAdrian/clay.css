@@ -64,7 +64,7 @@ body {
 }
 
 .container {
-  padding: 7rem 1.5rem 13rem;
+  padding: 8rem 1.5rem 18rem;
   position: relative;
 }
 
@@ -72,12 +72,33 @@ body {
   background-color: var(--color-yellow);
 }
 
+.container--blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.container--dark {
+  color: var(--color-text);
+}
+
+.container--dark h1 {
+  color: var(--color-text);
+}
+
 .container--cyan {
   background-color: var(--color-cyan);
 }
 
+.container--red {
+  background-color: var(--color-red);
+}
+
 .container--orange {
   background-color: var(--color-orange);
+}
+
+.container--hero {
+  padding-bottom: 12rem;
 }
 
 .container__wrapper {
@@ -106,8 +127,20 @@ body {
   fill: var(--color-cyan);
 }
 
+.divider--red .shape-fill {
+  fill: var(--color-red);
+}
+
+.divider--yellow .shape-fill {
+  fill: var(--color-yellow);
+}
+
 .divider--orange .shape-fill {
   fill: var(--color-orange);
+}
+
+.divider--blue .shape-fill {
+  fill: var(--color-blue);
 }
 
 .hero {
@@ -122,10 +155,10 @@ body {
 }
 
 .hero figure {
-  margin-bottom: -25rem;
+  margin-bottom: -20rem;
   z-index: 2;
   flex-shrink: 0;
-  animation: wiggle 3s ease-in-out infinite alternate;
+  animation: wiggle 4s ease-in-out infinite alternate;
   transform-origin: 50% 50%;
 }
 
@@ -155,13 +188,13 @@ body {
 
 @keyframes wiggle {
   0% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: rotate(0) translate3d(-1rem, -1rem, 0);
+    transform: translate3d(-1.5rem, -1.5rem, 0);
   }
   100% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -236,7 +269,10 @@ body {
 }
 
 .install pre,
-.apply pre {
+.mixin .code,
+.options pre,
+.apply pre,
+.mold pre {
   --clay-background: var(--color-white);
   --clay-shadow-inset-secondary: 8px 8px 8px 0 rgba(255, 255, 255, 0.9);
   padding: 2rem 3rem;
@@ -252,18 +288,75 @@ body {
   --clay-background: var(--color-blue);
 }
 
-.apply .card {
+.apply .card,
+.mold .html,
+.mixin .card,
+.options .css,
+.mold .css {
   --clay-background: var(--color-red);
   padding: 3rem 4rem;
 }
 
-.apply {
+.apply,
+.options,
+.mixin,
+.mold {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 8rem;
   margin-top: 5rem;
 }
 
+.options .css,
+.mold .css {
+  --clay-background: var(--color-blue);
+}
+
 .apply .example {
   max-width: 568px;
+}
+
+.mold article + article {
+  margin-top: 4rem;
+}
+
+.mold .example {
+  position: sticky;
+  top: 2rem;
+  --clay-background: var(--color-red);
+  --clay-border-radius: 48px;
+
+  color: var(--color-white);
+  padding: 48px;
+  max-width: 568px;
+}
+
+.mixin pre {
+  font-size: 18px;
+}
+
+.mixin img {
+  margin-bottom: -18rem;
+  z-index: 1;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color-cyan);
+}
+
+.footer .yellow {
+  color: var(--color-yellow);
+}
+
+.footer p {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding-bottom: 5rem;
 }
