@@ -13,7 +13,7 @@ $default-shadow-inset-secondary: 8px 8px 16px 0 rgba(255, 255, 255, 0.2);
   $shadow-inset-primary: $default-shadow-inset-primary,
   $shadow-inset-secondary: $default-shadow-inset-secondary
 ) {
-  background-color: $background;
+  background: $background;
   border-radius: var(--clay-border-radius, 32px);
   box-shadow: $shadow-outset, inset $shadow-inset-primary, inset $shadow-inset-secondary;
 }
