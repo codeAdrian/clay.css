@@ -18,7 +18,7 @@ What sets claymorphism apart from neumorphism is that it floats above the backgr
 ## Installation
 ### CDN
 
-```
+```html
 <link
   rel="stylesheet"
   href="https://unpkg.com/claymorphism-css/dist/clay.css"
@@ -80,7 +80,7 @@ This CSS class allows you to easily change the claymorphic styles via CSS proper
 
 ## Options (CSS Variables)
 
-```
+```css
 --clay-background
 --clay-border-radius
 --clay-shadow-outset
@@ -94,7 +94,7 @@ This CSS class allows you to easily change the claymorphic styles via CSS proper
 
 SASS mixin allows you more flexibility in applying claymorphism styles to your components. For example, this way you can easily add styles to pseudo-elements or pseudo-selectors or use the mixin in other SASS mixins or functions.
 
-```
+```scss
 @import "claymorphism-css/dist/clay.scss";
 
 @import @include clay(
@@ -118,9 +118,9 @@ If you are using vanilla CSS and a util class, you cannot apply it to pseudo-ele
 You'll have to apply the following styles manually. Check out the default values provided by the `clay` class.
 
 ```css
-  background: [value];
-  border-radius: [value];
-  box-shadow: [value];
+background: [value];
+border-radius: [value];
+box-shadow: [value];
 ```
 
 
