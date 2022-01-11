@@ -1,8 +1,11 @@
+
 # clay.css
 
 Extensible and configurable micro CSS util class and SASS mixin for adding claymorphism styles to your components.
 
 ![](https://raw.githubusercontent.com/codeAdrian/clay.css/gh-pages/assets/social.jpg)
+
+<a href="https://www.producthunt.com/posts/clay-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-clay-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=326342&theme=dark" alt="clay.css - Helps you create inflated fluffy 3D claymorphic HTML shapes | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 ## About
 
