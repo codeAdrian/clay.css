@@ -1,4 +1,3 @@
-
 # clay.css
 
 Extensible and configurable micro CSS util class and SASS mixin for adding claymorphism styles to your components.
@@ -16,6 +15,7 @@ It features inflated fluffy 3D elements which look charming and introduce a much
 What sets claymorphism apart from neumorphism is that it floats above the background instead of being connected to it, eliminating accessibility issues and design restrictions of the latter.
 
 ## Installation
+
 ### CDN
 
 ```
@@ -42,15 +42,14 @@ Download and add the `dist/clay.css` or `dist/clay.scss` manually.
 ## Usage
 
 This is a minimal, single class CSS util that applies only basic claymorphism styles:
-* Background
-* Border radius
-* One outset shadow
-* Two inset shadows
+
+- Background
+- Border radius
+- One outset shadow
+- Two inset shadows
 
 ```html
-<div class="clay">
-  Fluffy ipsum dolor sit amet consectetur...
-</div>
+<div class="clay">Fluffy ipsum dolor sit amet consectetur...</div>
 ```
 
 ![](./docs/example1.png)
@@ -58,13 +57,11 @@ This is a minimal, single class CSS util that applies only basic claymorphism st
 This CSS class allows you to easily change the claymorphic styles via CSS properies. These changes and additional styles should be applied with the extending class.
 
 ```html
-<div class="clay card">
-  Fluffy ipsum dolor sit amet consectetur...
-</div>
+<div class="clay card">Fluffy ipsum dolor sit amet consectetur...</div>
 ```
 
 ```css
-.card{
+.card {
   /* Modify clay.css properties */
   --clay-background: #f76d6d;
   --clay-border-radius: 48px;
@@ -76,7 +73,6 @@ This CSS class allows you to easily change the claymorphic styles via CSS proper
 ```
 
 ![](./docs/example2.png)
-
 
 ## Options (CSS Variables)
 
@@ -106,7 +102,6 @@ SASS mixin allows you more flexibility in applying claymorphism styles to your c
 );
 ```
 
-
 ## FAQ
 
 ### How do I apply claymorphism styles to pseudo-elements or pseudo-selectors?
@@ -118,11 +113,10 @@ If you are using vanilla CSS and a util class, you cannot apply it to pseudo-ele
 You'll have to apply the following styles manually. Check out the default values provided by the `clay` class.
 
 ```css
-  background: [value];
-  border-radius: [value];
-  box-shadow: [value];
+background: [value];
+border-radius: [value];
+box-shadow: [value];
 ```
-
 
 ### Why not build the entire framework / design system?
 
