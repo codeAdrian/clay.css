@@ -85,6 +85,7 @@ This CSS class allows you to easily change the claymorphic styles via CSS proper
 ```
 
 ![](https://codeadrian.github.io/clay.css/assets/diagram-min.png)
+![](https://github.com/MaxPScript/clay.css/blob/master/docs/shadow_outset.png '--clay-shadow-outset')
 
 ## SASS Mixin
 
